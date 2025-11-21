@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>College Chatbot Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h2>College Enquiry Portal</h2>
+    <p class="sub">Login or register to continue</p>
+
+    <input type="text" id="username" placeholder="Enter your name" required>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button onclick="login()">Continue</button>
+  </div>
+
+  <script>
+    function login() {
+      const name = document.getElementById('username').value;
+      const email = document.getElementById('email').value;
+
+      if (name && email) {
+        localStorage.setItem("username", name);
+        localStorage.setItem("email", email);
+        window.location.href = "chatbot.html";
+      } else {
+        alert("Please fill in all fields");
+      }
+    }
+  </script>
+</body>
+</html>
