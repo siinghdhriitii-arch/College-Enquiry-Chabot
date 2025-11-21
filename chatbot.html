@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FST Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-body">
+  <div class="chat-container">
+    
+    
+    <div class="chat-header">
+      <img src="images/chatbot.png" alt="Bot" class="bot-avatar">
+      <h3>FST Assistant</h3>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+      <div class="bot-message">
+        <img src="images/chatbot.png" class="message-avatar">
+        <div class="message-text">Hi, I'm IFHE Chat Assistant 👋</div>
+      </div>
+      
+      <div class="bot-message">
+        <img src="images/chatbot.png" class="message-avatar">
+        <div class="message-text">Please fill in the following details</div>
+      </div>
+
+      <div class="form-fields">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="tel" id="phone" placeholder="Phone">
+        <input type="text" id="city" placeholder="City">
+        <input type="text" id="program" placeholder="Program">
+        <button onclick="submitDetails()">Submit</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
